@@ -13,3 +13,8 @@ a{
 a:hover{
     color: #390;
 }
+
+body, input, textarea, select, button, table{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #222; font-size: 13px; line-height: 1.5;
+}
