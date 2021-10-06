@@ -2,51 +2,156 @@
 
 /*스킵 내비게이션*/
 
-#skip{
-    position: relative;
+#skip {
+  position: relative;
 }
-#skip a{
-    position: absolute; left: 0px; top:-35px;border: 1px solid white;color:#fff;background: #333;line-height: 30px; width: 170px;text-align: center;
+#skip a {
+  position: absolute;
+  left: 0px;
+  top: -35px;
+  border: 1px solid white;
+  color: #fff;
+  background: #333;
+  line-height: 30px;
+  width: 170px;
+  text-align: center;
 }
-#skip a:active,#skip a:focus{top:0;}
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
 
 /* layout */
-#wrap{width: 100%;}
-#header{width: 100%;height: 325px;background: url("../img/header_bg.jpg")repeat-x center top;}
-#contents{width: 100%;height: 800px;background: #222;}
-#footer{width: 100%;height: 200px;background: #333;}
-
-#cont_nav{width: 100%;height: 200px;background: #333;}
-#cont_tit{width: 100%;height: 200px;background: #444}
-#cont_ban{width: 100%;height: 200px;background: #555}
-#cont_cont{width: 100%;height: 200px;background: #666}
-
-
-.container{
-    width: 990px;
-    height: inherit;
-    margin: 0 auto;
-    /*background: rgba(255,255,255,0.3);*/
+#wrap {
+  width: 100%;
+}
+#header {
+  width: 100%;
+  height: 325px;
+  background: url("../img/header_bg.jpg") repeat-x center top;
+}
+#contents {
+  width: 100%;
+  height: 800px;
+}
+#footer {
+  width: 100%;
+  height: 200px;
+  background: #333;
 }
 
-.header{}
-.header .header-menu{text-align: right;}
-.header .header-menu a{color:#fff; padding: 10px 0px 10px 13px; display:inline-block;}
-.header .header-menu a:hover{color:#6666}
-.header .header-tit{text-align: center;}
-.header .header-tit h1{background-color: #4aa8d4;font-size: 28px; padding: 5px 20px 6px 20px; display: inline-block;color: #fff;margin-top: 40px;
-    font-weight: normal; text-transform: uppercase;
+#cont_nav {
 }
-.header .header-tit a{
-    display: inline-block; background-color: #2698cb; font-size: 18px;color: #fff;padding: 5px 20px 6px 20px; margin-top: -5px;
+#cont_tit {
+  width: 100%;
+  height: 200px;
+  background: #444;
 }
-.header .header-icon{
-    text-align: center;margin: 30px;
+#cont_ban {
+  width: 100%;
+  height: 200px;
+  background: #555;
 }
-.header .header-icon a{
-    width: 60px;height: 60px;background: url(../img/icon.png);display: inline-block;
+#cont_cont {
+  width: 100%;
+  height: 200px;
+  background: #666;
 }
-.header .header-icon a.icon1{background-position: 0px, 0px;}
-.header .header-icon a.icon2{background-position: 0px, -60px;}
-.header .header-icon a.icon3{background-position: 0px, -120px;}
-.header .header-icon a.icon4{background-position: 0px, -180px;}
+
+.container {
+  width: 990px;
+  height: inherit;
+  margin: 0 auto;
+  /*background: rgba(255,255,255,0.3);*/
+}
+
+.header .header-menu {
+  text-align: right;
+}
+.header .header-menu a {
+  color: #fff;
+  padding: 10px 0px 10px 13px;
+  display: inline-block;
+}
+.header .header-menu a:hover {
+  color: #6666;
+}
+.header .header-tit {
+  text-align: center;
+}
+.header .header-tit h1 {
+  background-color: #4aa8d4;
+  font-size: 28px;
+  padding: 5px 20px 6px 20px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.header .header-tit a {
+  display: inline-block;
+  background-color: #2698cb;
+  font-size: 18px;
+  color: #fff;
+  padding: 5px 20px 6px 20px;
+  margin-top: -5px;
+}
+.header .header-icon {
+  text-align: center;
+  margin: 30px;
+}
+.header .header-icon a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background: url(../img/icon.png);
+  margin: 0 3px;
+}
+
+.header .header-icon a.icon1 {
+  background-position: 0 0;
+}
+.header .header-icon a.icon2 {
+  background-position: 0 -60px;
+}
+.header .header-icon a.icon3 {
+  background-position: 0 -120px;
+}
+.header .header-icon a.icon4 {
+  background-position: 0 -180px;
+}
+
+.header .header-icon a.icon1:hover {
+  background-position: -60px 0;
+}
+.header .header-icon a.icon2:hover {
+  background-position: -60px -60px;
+}
+.header .header-icon a.icon3:hover {
+  background-position: -60px -120px;
+}
+.header .header-icon a.icon4:hover {
+  background-position: -60px -180px;
+}
+
+/* 전체 메뉴*/
+.nav {
+  overflow: hidden;
+}
+.nav > div {
+  float: left;
+  width: 40%;
+}
+
+.nav > div:last-child {
+  width: 20%;
+}
+
+.nav > div ol {
+  overflow: hidden;
+}
+.nav > div ol li {
+  float: left;
+  width: 50%;
+}
