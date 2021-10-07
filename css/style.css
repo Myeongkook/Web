@@ -41,11 +41,10 @@
 }
 
 #cont_nav {
+    background: #f6fdff;
 }
 #cont_tit {
-  width: 100%;
-  height: 200px;
-  background: #444;
+    background: #EAF7Fd;
 }
 #cont_ban {
   width: 100%;
@@ -138,12 +137,15 @@
 /* 전체 메뉴*/
 .nav {
   overflow: hidden;
+  padding: 30px;
 }
 .nav > div {
   float: left;
   width: 40%;
 }
-
+.nav > div h3{
+    font-size: 18px;color: #25a2d0;margin-bottom: 4px;
+}
 .nav > div:last-child {
   width: 20%;
 }
@@ -154,4 +156,36 @@
 .nav > div ol li {
   float: left;
   width: 50%;
+}
+.nav > div ol li a:hover{
+    text-decoration: underline;
+  }
+  .nav > div ol li a{
+    color:black
+  }
+  
+
+.nav > div:last-child ol li {
+    width: 100%;
+  }
+
+
+/* title */
+.tit{
+    position: relative;
+}
+
+.tit h2{
+    font-size: 40px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color:#2c94c4;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.tit .btn{
+    position: absolute; right: 0; top: 5px;;
+
+    width: 60px; height: 60px; background: url("../img/icon.png") no-repeat 0 -600px;
 }
