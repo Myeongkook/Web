@@ -371,3 +371,42 @@
   width: 17px;
   height: 17px;
 }
+
+.notice2 {
+  position: relative;
+  margin-top: 15px;
+}
+.notice2 h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+.notice2 ul {
+}
+.notice2 li {
+  background: url(../img/dot.gif) no-repeat 0 8px;
+  overflow: hidden;
+  padding-left: 8px;
+}
+.notice2 li a {
+  float: left;
+  width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice2 li span {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+.notice2 a.more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background: url(../img/icon.png) -150px -90px;
+  width: 17px;
+  height: 17px;
+}
