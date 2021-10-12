@@ -546,3 +546,18 @@
   display: inline-block;
   font-size: 12px;
 }
+
+/* 컨텐츠 요소를 보이지 않게 하는 방법 */
+/*
+1. display:none -- display:block (영역 사라짐)
+2. visibility:hidden -- visibility:visible; (영역 유지)
+3. opacity: 0; -- opacity: 1; (영역 유지)
+4. width 0; height0; overflow; hidden;
+*/
+
+.tab_menu{}
+.tab_menu ul{overflow: hidden;}
+.tab_menu ul li{float: left; border: 1px solid #ccc;}
+.tab_menu ul li a{}
+.tab_menu ul li ul{}
+.tab_menu ul li ul li{}
