@@ -555,9 +555,18 @@
 4. width 0; height0; overflow; hidden;
 */
 
-.tab_menu{}
-.tab_menu ul{overflow: hidden;}
-.tab_menu ul li{float: left; border: 1px solid #ccc;}
-.tab_menu ul li a{}
-.tab_menu ul li ul{}
-.tab_menu ul li ul li{}
+.tab_menu{position: relative; border:1px solid #ccc; padding: 8px; height: 105px;}
+.tab_menu ul{overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab_menu ul li{float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px;}
+.tab_menu ul li a{padding: 5px 10px; display: block;}
+.tab_menu ul li ul{position: absolute; left: 0; top: 48px;width: 270px; border:0}
+.tab_menu ul li ul li{float: none; border:0px;background: url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px;}
+.tab_menu ul li ul li a{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;width: 100%; padding: 0 0 3px 0;}
+.tab_menu ul li.active{
+  background: #2c94c4;
+}
+.tab_menu ul li.active > a{
+  color:#fff
+}
+
+.notice4{}
