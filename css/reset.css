@@ -105,3 +105,9 @@ h6 {
   color: #222;
   font-weight: normal;
 }
+
+/* 테두리 초기화 */
+
+fieldset, img{
+  border: 0 none;
+}
