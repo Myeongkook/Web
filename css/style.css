@@ -249,25 +249,43 @@
 } */
 .ban {
   position: relative;
-  padding: 24px 0px 20px;
+  padding: 24px 0px 40px;
+
 }
 .ban .slick-prev {
   position: absolute;
   left: -80px;
-  top: 60px;
+  top: 80px;
   width: 43px;
   height: 43px;
   background: url(../img/icon.png) no-repeat -150px 0;
+  text-indent: -9999px;
 }
+.ban .slick-prev:hover{
+  background-position: -193px 0;
+}
+
 .ban .slick-next {
   position: absolute;
   right: -80px;
-  top: 60px;
+  top: 80px;
   width: 43px;
   height: 43px;
   background: url(../img/icon.png) no-repeat -150px -43px;
+  text-indent: -9999px;
+
+}
+.ban .slick-next:hover{
+  background-position: -193px -43px;
 }
 
+.ban img{border: solid 4px #dcdcdc;}
+.ban img:hover{border-color: #98dcbc;}
+.ban .slick-slide{margin: 10px;}
+.ban .slick-dots{position:absolute;bottom: 15px;display: block;width: 100%;text-align: center;}
+.ban .slick-dots li{display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button{font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer;background: #5dbfeb; border-radius: 50%;}
+.ban .slick-dots .slick-active button{background: #2b91c8;}
 .cont {
   overflow: hidden;
   padding-top: 30px;

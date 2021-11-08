@@ -113,3 +113,7 @@ fieldset,
 img {
   border: 0 none;
 }
+
+button{
+  border: 0;
+}
